@@ -18,6 +18,7 @@ Vous pouvez retrouver [ici](memo/main.md) mon apprentissage détaillé sur Andro
 > Cette partie est un copier coller du [TP à rendre](https://cours.brosseau.ovh/tp/android/app-base-android.html) de Valentin Brosseau.
 
 > ❌ = Je n'ai pas réussis ou eu le temps de réaliser la fonctionnalité
+> 
 > ✔️ = La fonctionnalité est complètement fonctionnel
 
 
