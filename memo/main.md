@@ -1,5 +1,5 @@
 # Memo
-[\> Revenir sur la page principale du repository.](../readme.md)
+[\> Revenir sur la page principale du repository.](../)
 
 
 > Ce document sert à noter ce que j'ai appris, les petites astuces sur Android que j'ai assimilé etc...
