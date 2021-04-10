@@ -1,7 +1,7 @@
 <p align="center"><img src="readme/images/eseo_logo.png" width="400"></p>
 
 # Projet Final Android
-> *Dernière mise à jour le 10 avril 2021*
+> *Dernière mise à jour le 11 avril 2021*
 
 Dans le cadre de la matière *Android* de mon cursus Ingénieur (Semestre 8), j'ai du développer une application en suivant **[un cahier des charges](#cahier-des-charges)** détaillés.
 
