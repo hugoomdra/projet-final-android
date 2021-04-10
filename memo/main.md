@@ -1,0 +1,3 @@
+# Memo
+
+> Ce document sert à noter ce que j'ai appris, les petites astuces sur Android que j'ai assimilé etc...
