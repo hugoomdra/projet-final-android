@@ -9,7 +9,7 @@ Vous pouvez me contacter sur mon **[LinkedIn](https://www.linkedin.com/in/hugo-m
 
 ## Mémo
 
-Vous pouvez retrouver [ici](memo/main.md) mon apprentissage détaillé sur Android.
+Vous pouvez retrouver **[ici](memo/main.md)** mon apprentissage détaillé sur Android.
 
 **Astuce, prise de note, cheat sheet, etc...**
 
