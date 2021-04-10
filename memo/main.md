@@ -1,5 +1,5 @@
 # Memo
-[\> Revenir sur la page principale du repository.](../)
+[\> Revenir sur la page principale du repository.](https://github.com/hugoomdra/projet-final-android)
 
 
 > Ce document sert à noter ce que j'ai appris, les petites astuces sur Android que j'ai assimilé etc...
