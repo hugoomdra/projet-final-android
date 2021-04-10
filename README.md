@@ -3,9 +3,9 @@
 # Projet Final Android
 > *Dernière mise à jour le 10 avril 2021*
 
-Dans le cadre de la matière *Android* de mon cursus Ingénieur (Semestre 8), j'ai du développer une application en suivant [un cahier des charges](#cahier-des-charges) détaillés.
+Dans le cadre de la matière *Android* de mon cursus Ingénieur (Semestre 8), j'ai du développer une application en suivant **[un cahier des charges](#cahier-des-charges)** détaillés.
 
-Vous pouvez me contacter sur mon [LinkedIn](https://www.linkedin.com/in/hugo-madureira/) si vous avez des questions.
+Vous pouvez me contacter sur mon **[LinkedIn](https://www.linkedin.com/in/hugo-madureira/)** si vous avez des questions.
 
 ## Mémo
 
@@ -15,7 +15,7 @@ Vous pouvez retrouver [ici](memo/main.md) mon apprentissage détaillé sur Andro
 
 ## Cahier des charges
 
-> *Cette partie est un copier coller du [TP à rendre](https://cours.brosseau.ovh/tp/android/app-base-android.html) de **[Valentin Brosseau](https://www.linkedin.com/in/valentin-brosseau-99b98827/)**.*
+> *Cette partie est un copier coller du **[TP à rendre](https://cours.brosseau.ovh/tp/android/app-base-android.html)** de **[Valentin Brosseau](https://www.linkedin.com/in/valentin-brosseau-99b98827/)**.*
 
 > ❌ = Je n'ai pas réussis ou eu le temps de réaliser la fonctionnalité
 > 
