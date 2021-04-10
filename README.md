@@ -1,8 +1,11 @@
-# Projet Final Android Semestre 8
+<p align="center"><img src="readme/images/eseo_logo.png" width="400"></p>
+
+# Projet Final Android
 > *Dernière mise à jour le 10 avril 2021*
 
-Dans le cadre de la matière *Android* de mon cursus Ingénieur, j'ai du développer une application en suivant un cahier des charges détaillés.
+Dans le cadre de la matière *Android* de mon cursus Ingénieur (Semestre 8), j'ai du développer une application en suivant [un cahier des charges](#cahier-des-charges) détaillés.
 
+Vous pouvez me contacter sur mon [LinkedIn](https://www.linkedin.com/in/hugo-madureira/) si vous avez des questions.
 ## Cahier des charges
 
 > Cette partie est un copier coller du [TP à rendre](https://cours.brosseau.ovh/tp/android/app-base-android.html) de Valentin Brosseau.
