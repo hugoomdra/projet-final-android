@@ -13,6 +13,11 @@ Vous pouvez retrouver **[ici](memo/main.md)** mon apprentissage détaillé sur A
 
 **Astuce, prise de note, cheat sheet, etc...**
 
+## Captures d'écran
+
+Voici le ***splashscreen*** qui s'affiche au minimum 2sec.
+<p align=""><img src="readme/images/spash_screen.png" width="150"></p>
+
 ## Cahier des charges
 
 > *Cette partie est un copier coller du **[TP à rendre](https://cours.brosseau.ovh/tp/android/app-base-android.html)** de **[Valentin Brosseau](https://www.linkedin.com/in/valentin-brosseau-99b98827/)**.*
