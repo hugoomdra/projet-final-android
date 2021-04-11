@@ -5,7 +5,7 @@
 
 Dans le cadre de la matière *Android* de mon cursus Ingénieur (Semestre 8), j'ai du développer une application en suivant **[un cahier des charges](#cahier-des-charges)** détaillés.
 
-Vous pouvez me contacter sur mon **[LinkedIn](https://www.linkedin.com/in/hugo-madureira/)** si vous avez des questions.
+Vous pouvez me contacter sur **[LinkedIn](https://www.linkedin.com/in/hugo-madureira/)** si vous avez des questions.
 
 ## Mémo
 
