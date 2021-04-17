@@ -17,10 +17,6 @@ import android.widget.Toast
 import androidx.core.app.ActivityCompat
 import kotlinx.android.synthetic.main.activity_localisation.*
 import java.util.*
-import com.google.android.gms.location.FusedLocationProviderClient
-import com.google.android.gms.location.LocationRequest
-import com.google.android.gms.location.LocationServices
-import com.google.android.gms.tasks.CancellationTokenSource
 
 
 class LocalisationActivity : AppCompatActivity() {
@@ -30,9 +26,20 @@ class LocalisationActivity : AppCompatActivity() {
         setContentView(R.layout.activity_localisation)
 
 
+        supportActionBar?.apply {
+            setTitle(getString(R.string.menu_localisation_eseo))
+            setDisplayHomeAsUpEnabled(true)
+            setDisplayShowHomeEnabled(true)
+        }
+
         btn_localisation.setOnClickListener({
             requestPermission()
         })
+    }
+
+    override fun onSupportNavigateUp(): Boolean {
+        finish()
+        return true
     }
 
     override fun onRequestPermissionsResult(requestCode: Int, permissions: Array<out String>, grantResults: IntArray) {
@@ -61,7 +68,9 @@ class LocalisationActivity : AppCompatActivity() {
             locationManager?.run {
                 locationManager.getLastKnownLocation(LocationManager.PASSIVE_PROVIDER)?.run {
                     val distance = calculDistance(this)
+                    savePosition()
                     afficherDistance(distance)
+                    afficherAdresse(geoCode(this))
 //                    geoCode(this)
                 }
             }
@@ -71,6 +80,11 @@ class LocalisationActivity : AppCompatActivity() {
     private fun afficherDistance(distance : Double){
 //        Toast.makeText(this, distance.toString() + " km", Toast.LENGTH_SHORT).show()
         text_distance.setText(distance.toString() + " km")
+    }
+
+    private fun afficherAdresse(adresse : String){
+//        Toast.makeText(this, distance.toString() + " km", Toast.LENGTH_SHORT).show()
+        text_adresse.setText(adresse)
     }
 
     private fun calculDistance(location: Location): Double {
@@ -94,6 +108,10 @@ class LocalisationActivity : AppCompatActivity() {
         } else {
             getLocation()
         }
+    }
+
+    private fun savePosition(){
+        LocalPreferences.getInstance(this).saveStringValue( "Votre valeur")
     }
 
     private fun hasPermission(): Boolean {
