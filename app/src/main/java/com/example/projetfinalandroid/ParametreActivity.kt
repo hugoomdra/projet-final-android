@@ -19,7 +19,7 @@ class ParametreActivity : AppCompatActivity() {
         setContentView(R.layout.activity_parametre)
 
         supportActionBar?.apply {
-            setTitle(getString(R.string.menu_localisation_eseo))
+            setTitle(getString(R.string.topbar_parametre))
             setDisplayHomeAsUpEnabled(true)
             setDisplayShowHomeEnabled(true)
         }
@@ -40,7 +40,7 @@ class ParametreActivity : AppCompatActivity() {
             ParametreItem("Me contacter", {
                 startActivity(Intent(Intent.ACTION_VIEW, Uri.parse("mailto:hugoomdra@gmail.com?Subject="
                         + Uri.encode("Contact depuis l'application")
-                        + "&Body="  
+                        + "&Body="
                         + Uri.encode("Hey, je te contacte depuis l'application car j'aimerais te dire que ..."))))
             }),
 

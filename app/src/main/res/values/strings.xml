@@ -2,4 +2,5 @@
     <string name="app_name">Projet Final Android</string>
     <string name="current_year">2021</string>
     <string name="menu_localisation_eseo">Aller à l\'ESEO</string>
+    <string name="topbar_parametre">Paramètres</string>
 </resources>
