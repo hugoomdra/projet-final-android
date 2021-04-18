@@ -23,6 +23,11 @@ class MainActivity : AppCompatActivity() {
         btn_parametre.setOnClickListener{
             startActivity(ParametreActivity.getStartIntent(this))
         }
+
+        btn_easter_egg.setOnClickListener{
+            startActivity(EasterEggActivity.getStartIntent(this))
+
+        }
     }
 
     override fun onResume() {

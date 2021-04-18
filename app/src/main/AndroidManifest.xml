@@ -12,7 +12,9 @@
         android:roundIcon="@mipmap/ic_launcher_eseo_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ProjetFinalAndroid">
-        <activity android:name=".ParametreActivity"></activity>
+        <activity android:name=".EasterEggActivity"
+            android:windowSoftInputMode="adjustResize"></activity>
+        <activity android:name=".ParametreActivity" />
         <activity android:name=".HistoriqueActivity" />
         <activity android:name=".LocalisationActivity" />
         <activity

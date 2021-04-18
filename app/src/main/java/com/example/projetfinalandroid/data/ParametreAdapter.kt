@@ -14,14 +14,16 @@ class ParametreAdapter(private val parametreList: Array<ParametreActivity.Parame
 
         fun displayItem(item: ParametreActivity.ParametreItem){
             itemView.findViewById<TextView>(R.id.textItem).text = item.name
-            itemView.findViewById<TextView>(R.id.textItem).setOnClickListener({
+            itemView.setOnClickListener({
                 item.onClick.invoke()
             })
         }
     }
 
+
+
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        val view = LayoutInflater.from(parent.context).inflate(R.layout.historique_item, parent, false)
+        val view = LayoutInflater.from(parent.context).inflate(R.layout.parametre_item, parent, false)
         return ViewHolder(view)
     }
 

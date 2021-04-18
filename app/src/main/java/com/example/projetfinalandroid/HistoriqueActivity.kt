@@ -11,7 +11,6 @@ import android.widget.LinearLayout
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.androideseo.data.LocalPreferences
 import com.example.projetfinalandroid.data.HistoriqueAdapter
-import com.example.projetfinalandroid.databinding.ActivityHistoriqueBinding
 import kotlinx.android.synthetic.main.activity_historique.*
 
 class HistoriqueActivity : AppCompatActivity() {
@@ -21,7 +20,7 @@ class HistoriqueActivity : AppCompatActivity() {
         setContentView(R.layout.activity_historique)
 
         supportActionBar?.apply {
-            setTitle(getString(R.string.menu_localisation_eseo))
+            setTitle("Historique des localisations")
             setDisplayHomeAsUpEnabled(true)
             setDisplayShowHomeEnabled(true)
         }
