@@ -15,6 +15,7 @@ import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
 import androidx.core.app.ActivityCompat
+import com.example.androideseo.data.LocalPreferences
 import kotlinx.android.synthetic.main.activity_localisation.*
 import java.util.*
 
@@ -68,10 +69,11 @@ class LocalisationActivity : AppCompatActivity() {
             locationManager?.run {
                 locationManager.getLastKnownLocation(LocationManager.PASSIVE_PROVIDER)?.run {
                     val distance = calculDistance(this)
-                    savePosition()
+                    val adresse : String = geoCode(this)
+                    afficherAdresse(adresse)
+                    savePosition(adresse)
                     afficherDistance(distance)
-                    afficherAdresse(geoCode(this))
-//                    geoCode(this)
+
                 }
             }
         }
@@ -110,21 +112,20 @@ class LocalisationActivity : AppCompatActivity() {
         }
     }
 
-    private fun savePosition(){
-        LocalPreferences.getInstance(this).saveStringValue( "Votre valeur")
+    private fun savePosition(adresse : String){
+        //LocalPreferences.getInstance(this).saveStringValue(adresse)
+        LocalPreferences.getInstance(this).addToHistory(adresse)
     }
 
     private fun hasPermission(): Boolean {
         return ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED
     }
 
-    private fun geoCode(location: Location){
+    private fun geoCode(location: Location): String {
         val geocoder = Geocoder(this, Locale.getDefault())
         val results = geocoder.getFromLocation(location.latitude, location.longitude, 1)
 
-        if (results.isNotEmpty()) {
-            Toast.makeText(this, results[0].getAddressLine(0), Toast.LENGTH_SHORT).show()
-        }
+        return results[0].getAddressLine(0)
     }
 
 

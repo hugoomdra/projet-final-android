@@ -35,5 +35,15 @@
         android:height="70dp"
         android:text="ME LOCALISER"></Button>
 
+    <TextView
+        android:id="@+id/text_adresse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:textColor="#A0A0A0"
+        android:textStyle="bold"></TextView>
+
 
 </LinearLayout>
