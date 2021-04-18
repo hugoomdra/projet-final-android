@@ -5,44 +5,47 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:gravity="center"
     tools:context=".LocalisationActivity">
-
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Quel est ma distance pour aller à l'ESEO ?"
+        android:text="Quelle est la distance me séparant de l'ESEO ?"
         android:gravity="center"
         android:textSize="30sp"
         android:textColor="@color/black"
-        android:textStyle="bold"></TextView>
+        android:textStyle="bold"
+        android:layout_marginTop="50dp"></TextView>
 
     <TextView
         android:id="@+id/text_distance"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="-"
+        android:text=""
         android:gravity="center"
         android:textSize="30sp"
-        android:textColor="#A0A0A0"
-        android:textStyle="bold"></TextView>
+        android:textColor="@color/eseo_red"
+        android:textStyle="bold"
+        android:layout_marginVertical="30dp"></TextView>
 
     <Button
+        android:layout_marginHorizontal="30dp"
         android:id="@+id/btn_localisation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:height="70dp"
-        android:text="ME LOCALISER"></Button>
+        android:text="ME LOCALISER"
+        ></Button>
 
     <TextView
         android:id="@+id/text_adresse"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="-"
+        android:text=""
         android:gravity="center"
-        android:textSize="30sp"
-        android:textColor="#A0A0A0"
+        android:textSize="22sp"
+        android:layout_marginVertical="30dp"
+        android:textColor="@color/eseo_red"
         android:textStyle="bold"></TextView>
 
 

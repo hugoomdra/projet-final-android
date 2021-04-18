@@ -5,6 +5,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.view.View
 import android.widget.Toast
 import com.example.androideseo.data.LocalPreferences
 import kotlinx.android.synthetic.main.activity_main.*
@@ -19,7 +20,6 @@ class MainActivity : AppCompatActivity() {
 //            finish()
         }
 
-
         btn_parametre.setOnClickListener{
             startActivity(ParametreActivity.getStartIntent(this))
         }
@@ -28,8 +28,12 @@ class MainActivity : AppCompatActivity() {
     override fun onResume() {
         super.onResume()
         if (LocalPreferences.getInstance(this).nullHistory()){
+            logo_history.setImageResource(R.drawable.ic_baseline_history_24);
             btn_historique.setEnabled(false)
+            text_history.setTextColor(getColor(R.color.disable))
         }else{
+            logo_history.setImageResource(R.drawable.ic_baseline_history_24_active);
+            text_history.setTextColor(getColor(R.color.eseo_red))
             btn_historique.setEnabled(true)
             btn_historique.setOnClickListener{
                 startActivity(HistoriqueActivity.getStartIntent(this))

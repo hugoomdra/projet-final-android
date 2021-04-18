@@ -43,6 +43,9 @@ class ParametreActivity : AppCompatActivity() {
                         + "&Body="
                         + Uri.encode("Hey, je te contacte depuis l'application car j'aimerais te dire que ..."))))
             }),
+            ParametreItem("A Propos de Moi", {
+                startActivity(Intent(Intent.ACTION_VIEW, Uri.parse("https://www.linkedin.com/in/hugo-madureira/")))
+            }),
 
         )
 

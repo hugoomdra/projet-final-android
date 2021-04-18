@@ -26,7 +26,6 @@ class LocalisationActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_localisation)
 
-
         supportActionBar?.apply {
             setTitle(getString(R.string.menu_localisation_eseo))
             setDisplayHomeAsUpEnabled(true)
@@ -65,15 +64,15 @@ class LocalisationActivity : AppCompatActivity() {
     private fun getLocation() {
         if (hasPermission()) {
             val locationManager = applicationContext.getSystemService(LOCATION_SERVICE) as LocationManager?
-
             locationManager?.run {
+                Log.d("test", "test test test")
                 locationManager.getLastKnownLocation(LocationManager.PASSIVE_PROVIDER)?.run {
+                    Log.d("test", "test test")
                     val distance = calculDistance(this)
                     val adresse : String = geoCode(this)
                     afficherAdresse(adresse)
                     savePosition(adresse)
                     afficherDistance(distance)
-
                 }
             }
         }
