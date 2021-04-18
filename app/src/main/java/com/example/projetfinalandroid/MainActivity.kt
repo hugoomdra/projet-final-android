@@ -24,6 +24,12 @@ class MainActivity : AppCompatActivity() {
 //            }
         }
 
+        btn_parametre.setOnClickListener{
+            startActivity(ParametreActivity.getStartIntent(this))
+        }
+
+
+
     }
 
     companion object {

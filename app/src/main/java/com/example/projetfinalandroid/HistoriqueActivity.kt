@@ -16,10 +16,12 @@ import kotlinx.android.synthetic.main.activity_historique.*
 
 class HistoriqueActivity : AppCompatActivity() {
 
+
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_historique)
-
 
         supportActionBar?.apply {
             setTitle(getString(R.string.menu_localisation_eseo))
@@ -29,9 +31,9 @@ class HistoriqueActivity : AppCompatActivity() {
 
         val items : Array<String> = LocalPreferences.getInstance(this).getHistory()!!.toTypedArray()
 
-        val res : Array<String> = arrayOf("super", "test")
+        val res : Array<String> = arrayOf("super", "test", "oslo", "rayhko", "voxytech","unzinziin")
 
-        recyclerView.adapter = HistoriqueAdapter(items);
+        recyclerView.adapter = HistoriqueAdapter(res);
 
         Log.d("test", LocalPreferences.getInstance(this).getHistory().toString())
     }
