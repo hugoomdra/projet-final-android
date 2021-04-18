@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
     tools:context=".HistoriqueActivity"
     android:orientation="vertical">
 
@@ -12,17 +11,22 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         >
 
 
     </androidx.recyclerview.widget.RecyclerView>
-    <TextView
-        android:id="@+id/text_test"
+
+
+    <Button
+        android:id="@+id/btn_delete_historique"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:text="VIDER LA LISTE"
+        android:height="70dp"
         android:gravity="center"
-        android:text="Historique View"></TextView>
+        android:layout_marginHorizontal="20dp"
+        />
 
 </LinearLayout>

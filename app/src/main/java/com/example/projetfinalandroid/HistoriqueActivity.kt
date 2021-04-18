@@ -16,9 +16,6 @@ import kotlinx.android.synthetic.main.activity_historique.*
 
 class HistoriqueActivity : AppCompatActivity() {
 
-
-
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_historique)
@@ -31,12 +28,19 @@ class HistoriqueActivity : AppCompatActivity() {
 
         val items : Array<String> = LocalPreferences.getInstance(this).getHistory()!!.toTypedArray()
 
-        val res : Array<String> = arrayOf("super", "test", "oslo", "rayhko", "voxytech","unzinziin")
+        // Liste pour tester le RecyclerView
+        // val res : Array<String> = arrayOf("super", "test", "oslo", "rayhko", "voxytech","unzinziin")
 
-        recyclerView.adapter = HistoriqueAdapter(res);
+        recyclerView.adapter = HistoriqueAdapter(items);
+
+        btn_delete_historique.setOnClickListener{
+            LocalPreferences.getInstance(this).deleteAllHistory();
+            finish()
+        }
 
         Log.d("test", LocalPreferences.getInstance(this).getHistory().toString())
     }
+
 
     override fun onSupportNavigateUp(): Boolean {
         finish()

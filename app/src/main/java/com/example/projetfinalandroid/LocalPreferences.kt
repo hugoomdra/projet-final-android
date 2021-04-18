@@ -40,12 +40,11 @@ class LocalPreferences private constructor(context: Context) {
     }
 
     // Fct permettant de verifier si le lieu de sauvegarde est vide
-    fun nullHistory(): Int {
-        var res = sharedPreferences.getStringSet("histories", mutableSetOf<String>())?.isEmpty();
-        if (res != true) {
-            return 1
+    fun nullHistory(): Boolean {
+        if (sharedPreferences.getStringSet("histories", mutableSetOf<String>())?.isEmpty() != true) {
+            return false
         } else
-            return 0
+            return true
     }
 }
 
