@@ -23,7 +23,7 @@
         android:id="@+id/btn_delete_historique"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="VIDER LA LISTE"
+        android:text="@string/historique_btn_vider_liste"
         android:height="70dp"
         android:gravity="center"
         android:layout_marginHorizontal="20dp"

@@ -20,7 +20,7 @@ class HistoriqueActivity : AppCompatActivity() {
         setContentView(R.layout.activity_historique)
 
         supportActionBar?.apply {
-            setTitle("Historique des localisations")
+            setTitle(getString(R.string.topbar_historique))
             setDisplayHomeAsUpEnabled(true)
             setDisplayShowHomeEnabled(true)
         }

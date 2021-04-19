@@ -25,26 +25,26 @@ class ParametreActivity : AppCompatActivity() {
         }
 
         val settings = arrayOf(
-            ParametreItem("Paramètre application",
+            ParametreItem(getString(R.string.parametre_list_1),
                 {
                 startActivity(Intent(Settings.ACTION_SETTINGS))
             }, R.drawable.ic_baseline_settings_24_blue),
-            ParametreItem("Paramètre localisation", {
+            ParametreItem(getString(R.string.parametre_list_2), {
                 startActivity(Intent(Settings.ACTION_LOCATION_SOURCE_SETTINGS))
             }, R.drawable.ic_baseline_edit_location_alt_24),
-            ParametreItem("Carte ESEO", {
+            ParametreItem(getString(R.string.parametre_list_3), {
                 startActivity(Intent(Intent.ACTION_VIEW, Uri.parse("geo:47.492884574915365,-0.5509639806591626")));
             }, R.drawable.ic_baseline_map_24_blue),
-            ParametreItem("Site de l'ESEO", {
+            ParametreItem(getString(R.string.parametre_list_4), {
                 startActivity(Intent(Intent.ACTION_VIEW, Uri.parse("https://eseo.fr/")))
             }, R.drawable.ic_baseline_school_24),
-            ParametreItem("Me contacter", {
+            ParametreItem(getString(R.string.parametre_list_5), {
                 startActivity(Intent(Intent.ACTION_VIEW, Uri.parse("mailto:hugoomdra@gmail.com?Subject="
-                        + Uri.encode("Contact depuis l'application")
+                        + Uri.encode(getString(R.string.parametre_mail_sujet))
                         + "&Body="
-                        + Uri.encode("Hey, je te contacte depuis l'application car j'aimerais te dire que ..."))))
+                        + Uri.encode(getString(R.string.parametre_mail_message)))))
             }, R.drawable.ic_baseline_email_24_blue),
-            ParametreItem("A Propos de Moi", {
+            ParametreItem(getString(R.string.parametre_list_6), {
                 startActivity(Intent(Intent.ACTION_VIEW, Uri.parse("https://www.linkedin.com/in/hugo-madureira/")))
             }, R.drawable.ic_baseline_account_circle_24_blue),
 

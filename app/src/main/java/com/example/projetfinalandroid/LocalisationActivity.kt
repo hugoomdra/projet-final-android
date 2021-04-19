@@ -27,7 +27,7 @@ class LocalisationActivity : AppCompatActivity() {
         setContentView(R.layout.activity_localisation)
 
         supportActionBar?.apply {
-            setTitle(getString(R.string.menu_localisation_eseo))
+            setTitle(getString(R.string.topbar_localisation))
             setDisplayHomeAsUpEnabled(true)
             setDisplayShowHomeEnabled(true)
         }

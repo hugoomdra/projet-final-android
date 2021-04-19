@@ -15,7 +15,7 @@ class EasterEggActivity : AppCompatActivity() {
         setContentView(R.layout.activity_easter_egg)
 
         supportActionBar?.apply {
-            setTitle("Easter Egg")
+            setTitle(getString(R.string.topbar_easter_egg))
             setDisplayHomeAsUpEnabled(true)
             setDisplayShowHomeEnabled(true)
         }
@@ -25,22 +25,22 @@ class EasterEggActivity : AppCompatActivity() {
 
             if (nombre == bonneReponse) {
                 text_reponse.setTextColor(getColor(R.color.eseo_blue))
-                text_reponse.setText("Voilaaaaa c'est la note qu'il me faut bien joué")
+                text_reponse.setText(getString(R.string.easter_egg_bonne_reponse))
             } else if (nombre > bonneReponse) {
                 text_reponse.setTextColor(getColor(R.color.eseo_red))
-                text_reponse.setText("Entre 0 et 20 tu sais lire ?")
+                text_reponse.setText(getString(R.string.easter_egg_mauvaise_reponse_1))
             } else if (nombre >= 15) {
                 text_reponse.setTextColor(getColor(R.color.eseo_red))
-                text_reponse.setText("C'est plus ! C'est une bonne note mais bon..")
+                text_reponse.setText(getString(R.string.easter_egg_mauvaise_reponse_2))
             } else if (nombre >= 10) {
                 text_reponse.setTextColor(getColor(R.color.eseo_red))
-                text_reponse.setText("C'est plus ! Je valide le semestre mais bon voila quoi..")
+                text_reponse.setText(getString(R.string.easter_egg_mauvaise_reponse_3))
             } else if (nombre >= 5) {
                 text_reponse.setTextColor(getColor(R.color.eseo_red))
-                text_reponse.setText("C'est plus ! Je valide même pas le semestre avec ça..")
+                text_reponse.setText(getString(R.string.easter_egg_mauvaise_reponse_4))
             } else {
                 text_reponse.setTextColor(getColor(R.color.eseo_red))
-                text_reponse.setText("C'est plus ! Je pense mériter une meilleure note quand même..")
+                text_reponse.setText(getString(R.string.easter_egg_mauvaise_reponse_5))
             }
         }
     }
