@@ -30,8 +30,8 @@ Voici le ***splashscreen*** qui s'affiche au minimum 2sec.
 L'application à fournir doit contenir au minimum les éléments suivants :
 
 - ✔️ L'icône de l'application doit être personnalisée.
-- ❌ Les textes doivent être « i18n » (en Français et en Anglais)
-- ❌ La structure de votre application doit être rangée en « package », en suivant l'organisation proposé en cours, ou la vôtre si celle-ci montre une organisation compréhensible.
+- ✔️ Les textes doivent être « i18n » (en Français et en Anglais)
+- ✔️ La structure de votre application doit être rangée en « package », en suivant l'organisation proposé en cours, ou la vôtre si celle-ci montre une organisation compréhensible.
 - ✔️ Un « splashscreen » qui s'affiche au minimum 2s. Celui-ci doit être constitué d'une image « logo », et d'un texte indiquant votre nom + prénom ainsi que l'année.
 - ✔️ Une activity Home avec :
   - ✔️ Un logo
