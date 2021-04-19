@@ -13,6 +13,7 @@ import android.os.Bundle
 import android.util.Log
 import androidx.core.app.ActivityCompat
 import com.example.projetfinalandroid.R
+import com.example.projetfinalandroid.data.LocalPreferences
 import kotlinx.android.synthetic.main.activity_localisation.*
 import java.util.*
 

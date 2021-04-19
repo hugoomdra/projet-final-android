@@ -1,4 +1,4 @@
-package com.example.projetfinalandroid.ui
+package com.example.projetfinalandroid.data
 
 import android.content.Context
 import android.content.SharedPreferences
@@ -20,24 +20,20 @@ class LocalPreferences private constructor(context: Context) {
         }
     }
 
-    // Fct permettant d'ajouter une adresse dans lieu de sauvegarde " histories"
     fun addToHistory(newEntry: String){
         val history = this.getHistory()
         history?.add(newEntry)
         sharedPreferences.edit().putStringSet("histories", history).apply()
     }
 
-    // Fct permettant de recupérer les adresses sauvegardés
     fun getHistory(): MutableSet<String>? {
         return sharedPreferences.getStringSet("histories",  mutableSetOf<String>().toMutableSet() )
     }
 
-    // Fct permettant de supprimer les adresses
     fun deleteAllHistory() {
         sharedPreferences.edit().clear().apply()
     }
 
-    // Fct permettant de verifier si le lieu de sauvegarde est vide
     fun nullHistory(): Boolean {
         if (sharedPreferences.getStringSet("histories", mutableSetOf<String>())?.isEmpty() != true) {
             return false

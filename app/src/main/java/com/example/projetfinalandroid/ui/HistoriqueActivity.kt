@@ -7,6 +7,7 @@ import android.os.Bundle
 import android.util.Log
 import com.example.projetfinalandroid.R
 import com.example.projetfinalandroid.data.HistoriqueAdapter
+import com.example.projetfinalandroid.data.LocalPreferences
 import kotlinx.android.synthetic.main.activity_historique.*
 
 class HistoriqueActivity : AppCompatActivity() {
