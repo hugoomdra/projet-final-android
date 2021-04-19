@@ -12,7 +12,7 @@ import kotlinx.android.synthetic.main.activity_parametre.*
 
 class ParametreActivity : AppCompatActivity() {
 
-    data class ParametreItem(val name: String, val onClick: (() -> Unit))
+    data class ParametreItem(val name: String, val onClick: (() -> Unit), val icone: Int)
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -25,27 +25,28 @@ class ParametreActivity : AppCompatActivity() {
         }
 
         val settings = arrayOf(
-            ParametreItem("Paramètre application", {
+            ParametreItem("Paramètre application",
+                {
                 startActivity(Intent(Settings.ACTION_SETTINGS))
-            }),
+            }, R.drawable.ic_baseline_settings_24_blue),
             ParametreItem("Paramètre localisation", {
                 startActivity(Intent(Settings.ACTION_LOCATION_SOURCE_SETTINGS))
-            }),
+            }, R.drawable.ic_baseline_edit_location_alt_24),
             ParametreItem("Carte ESEO", {
                 startActivity(Intent(Intent.ACTION_VIEW, Uri.parse("geo:47.492884574915365,-0.5509639806591626")));
-            }),
+            }, R.drawable.ic_baseline_map_24_blue),
             ParametreItem("Site de l'ESEO", {
                 startActivity(Intent(Intent.ACTION_VIEW, Uri.parse("https://eseo.fr/")))
-            }),
+            }, R.drawable.ic_baseline_school_24),
             ParametreItem("Me contacter", {
                 startActivity(Intent(Intent.ACTION_VIEW, Uri.parse("mailto:hugoomdra@gmail.com?Subject="
                         + Uri.encode("Contact depuis l'application")
                         + "&Body="
                         + Uri.encode("Hey, je te contacte depuis l'application car j'aimerais te dire que ..."))))
-            }),
+            }, R.drawable.ic_baseline_email_24_blue),
             ParametreItem("A Propos de Moi", {
                 startActivity(Intent(Intent.ACTION_VIEW, Uri.parse("https://www.linkedin.com/in/hugo-madureira/")))
-            }),
+            }, R.drawable.ic_baseline_account_circle_24_blue),
 
         )
 

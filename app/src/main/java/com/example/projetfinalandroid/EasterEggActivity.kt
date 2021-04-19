@@ -8,7 +8,7 @@ import kotlinx.android.synthetic.main.activity_easter_egg.*
 
 class EasterEggActivity : AppCompatActivity() {
 
-    val bonneReponse = "20"
+    val bonneReponse = 20
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -21,7 +21,7 @@ class EasterEggActivity : AppCompatActivity() {
         }
 
         btn_soumettre.setOnClickListener {
-            val nombre = edit_text.text.toString()
+            val nombre = edit_text.text.toString().toInt()
 
             if (nombre == bonneReponse) {
                 text_reponse.setTextColor(getColor(R.color.eseo_blue))
@@ -29,18 +29,18 @@ class EasterEggActivity : AppCompatActivity() {
             } else if (nombre > bonneReponse) {
                 text_reponse.setTextColor(getColor(R.color.eseo_red))
                 text_reponse.setText("Entre 0 et 20 tu sais lire ?")
-            } else if (nombre >= "15") {
+            } else if (nombre >= 15) {
                 text_reponse.setTextColor(getColor(R.color.eseo_red))
                 text_reponse.setText("C'est plus ! C'est une bonne note mais bon..")
-            } else if (nombre >= "10") {
+            } else if (nombre >= 10) {
                 text_reponse.setTextColor(getColor(R.color.eseo_red))
                 text_reponse.setText("C'est plus ! Je valide le semestre mais bon voila quoi..")
-            } else if (nombre >= "5") {
+            } else if (nombre >= 5) {
                 text_reponse.setTextColor(getColor(R.color.eseo_red))
                 text_reponse.setText("C'est plus ! Je valide même pas le semestre avec ça..")
             } else {
                 text_reponse.setTextColor(getColor(R.color.eseo_red))
-                text_reponse.setText("C'est plus ! Je pense méritais une meilleure note quand même..")
+                text_reponse.setText("C'est plus ! Je pense mériter une meilleure note quand même..")
             }
         }
     }
