@@ -1,4 +1,4 @@
-package com.example.projetfinalandroid
+package com.example.projetfinalandroid.ui
 
 import android.Manifest
 import android.annotation.SuppressLint
@@ -7,15 +7,12 @@ import android.content.Intent
 import android.content.pm.PackageManager
 import android.location.Geocoder
 import android.location.Location
-import android.location.LocationListener
 import android.location.LocationManager
-import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import android.widget.Toast
 import androidx.core.app.ActivityCompat
-import com.example.androideseo.data.LocalPreferences
+import com.example.projetfinalandroid.R
 import kotlinx.android.synthetic.main.activity_localisation.*
 import java.util.*
 

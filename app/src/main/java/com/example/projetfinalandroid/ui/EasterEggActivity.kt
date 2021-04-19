@@ -1,9 +1,10 @@
-package com.example.projetfinalandroid
+package com.example.projetfinalandroid.ui
 
 import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.projetfinalandroid.R
 import kotlinx.android.synthetic.main.activity_easter_egg.*
 
 class EasterEggActivity : AppCompatActivity() {

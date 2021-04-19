@@ -1,15 +1,11 @@
-package com.example.projetfinalandroid
+package com.example.projetfinalandroid.ui
 
-import android.app.Activity
 import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import android.view.LayoutInflater
-import android.widget.LinearLayout
-import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.androideseo.data.LocalPreferences
+import com.example.projetfinalandroid.R
 import com.example.projetfinalandroid.data.HistoriqueAdapter
 import kotlinx.android.synthetic.main.activity_historique.*
 

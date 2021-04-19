@@ -1,13 +1,12 @@
 package com.example.projetfinalandroid.data
 
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.example.projetfinalandroid.ParametreActivity
+import com.example.projetfinalandroid.ui.ParametreActivity
 import com.example.projetfinalandroid.R
 
 class ParametreAdapter(private val parametreList: Array<ParametreActivity.ParametreItem>) : RecyclerView.Adapter<ParametreAdapter.ViewHolder>() {

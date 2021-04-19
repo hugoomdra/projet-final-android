@@ -1,9 +1,7 @@
-package com.example.androideseo.data
+package com.example.projetfinalandroid.ui
 
 import android.content.Context
 import android.content.SharedPreferences
-import android.text.method.TextKeyListener.clear
-import android.widget.Toast
 
 class LocalPreferences private constructor(context: Context) {
 

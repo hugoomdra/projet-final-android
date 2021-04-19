@@ -1,10 +1,11 @@
-package com.example.projetfinalandroid
+package com.example.projetfinalandroid.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
 import android.view.View
+import com.example.projetfinalandroid.R
 
 class SplashActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

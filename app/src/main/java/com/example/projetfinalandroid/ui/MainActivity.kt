@@ -1,13 +1,10 @@
-package com.example.projetfinalandroid
+package com.example.projetfinalandroid.ui
 
 import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
-import android.view.View
-import android.widget.Toast
-import com.example.androideseo.data.LocalPreferences
+import com.example.projetfinalandroid.R
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {

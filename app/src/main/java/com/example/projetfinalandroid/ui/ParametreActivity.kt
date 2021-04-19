@@ -1,4 +1,4 @@
-package com.example.projetfinalandroid
+package com.example.projetfinalandroid.ui
 
 import android.content.Context
 import android.content.Intent
@@ -6,7 +6,7 @@ import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.provider.Settings
-import android.util.Log
+import com.example.projetfinalandroid.R
 import com.example.projetfinalandroid.data.ParametreAdapter
 import kotlinx.android.synthetic.main.activity_parametre.*
 
