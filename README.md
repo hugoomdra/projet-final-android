@@ -33,8 +33,8 @@ L'application à fournir doit contenir au minimum les éléments suivants :
 - ❌ Les textes doivent être « i18n » (en Français et en Anglais)
 - ❌ La structure de votre application doit être rangée en « package », en suivant l'organisation proposé en cours, ou la vôtre si celle-ci montre une organisation compréhensible.
 - ✔️ Un « splashscreen » qui s'affiche au minimum 2s. Celui-ci doit être constitué d'une image « logo », et d'un texte indiquant votre nom + prénom ainsi que l'année.
-- ❌ Une activity Home avec :
-  - ❌ Un logo
+- ✔️ Une activity Home avec :
+  - ✔️ Un logo
   - ✔️ 3 éléments cliquables :
     - ✔️ Localisation
     - ✔️ Historique des localisations précédemment réalisé.
@@ -44,11 +44,11 @@ L'application à fournir doit contenir au minimum les éléments suivants :
   - ✔️ Une fois la localisation obtenue, la distance entre l'ESEO et sa position doit être affichée en kilomètre.
   - ✔️ À chaque localisation, à l'aide des SharedPreferences, enregistrez la demande pour la lister dans la vue « historique ».
   - ✔️ Vous devez gérer correctement le flow permission comme vue ensemble (avec gestion des erreurs)
-- ❌ Une activity Historique :
-  - ❌ Utilisation d'un Recyclerview.
+- ✔️ Une activity Historique :
+  - ✔️ Utilisation d'un Recyclerview.
     - ✔️ Affiche l'historique des positions enregistrées.
-    - ❌ Bonus : Action pour vider la liste.
-    - ❌ Bonus : Si la liste est vide, l'accès à cette activity doit être impossible.
+    - ✔️ Bonus : Action pour vider la liste.
+    - ✔️ Bonus : Si la liste est vide, l'accès à cette activity doit être impossible.
     - ❌ Bonus : Ouverture de l'application « de cartographie » du téléphone à la position enregistrée.
     - ❌ Bonus : Affichage pour chaque élément du « reverse de la position GPS en texte » (comme vu ensemble).
   - ✔️ Une activity Paramètres :
