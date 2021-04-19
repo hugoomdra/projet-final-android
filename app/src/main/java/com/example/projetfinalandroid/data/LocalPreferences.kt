@@ -1,4 +1,4 @@
-package com.example.projetfinalandroid.ui
+package com.example.projetfinalandroid.data
 
 import android.content.Context
 import android.content.SharedPreferences
