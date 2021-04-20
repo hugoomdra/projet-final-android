@@ -13,6 +13,10 @@ Vous pouvez retrouver **[ici](memo/main.md)** mon apprentissage détaillé sur A
 
 **Astuce, prise de note, cheat sheet, etc...**
 
+## Vidéo
+
+Je tourne la vidéo des que possible (avant Vendredi 23 avril). Le lien sera mit ici.
+
 ## Captures d'écran
 
 Voici le ***splashscreen*** qui s'affiche au minimum 2sec.
