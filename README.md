@@ -15,7 +15,7 @@ Vous pouvez retrouver **[ici](memo/main.md)** mon apprentissage détaillé sur A
 
 ## Vidéo
 
-Je tourne la vidéo des que possible (avant Vendredi 23 avril). Le lien sera mit ici.
+Voici la vidéo qui récapitule les fonctionnalités des l'application : https://youtu.be/lNYSYA7Xqec
 
 ## Captures d'écran
 
