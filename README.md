@@ -15,7 +15,7 @@ Vous pouvez retrouver **[ici](memo/main.md)** mon apprentissage détaillé sur A
 
 ## Vidéo
 
-Voici la vidéo qui récapitule les fonctionnalités des l'application : https://youtu.be/lNYSYA7Xqec
+Voici [la vidéo](https://youtu.be/lNYSYA7Xqec) qui récapitule les fonctionnalités de l'application.
 
 ## Captures d'écran
 
