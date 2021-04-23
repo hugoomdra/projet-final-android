@@ -11,6 +11,7 @@ import com.example.projetfinalandroid.R
 class HistoriqueAdapter(private val historiqueList : Array<String>) : RecyclerView.Adapter<HistoriqueAdapter.ViewHolder>() {
     class ViewHolder(itemView : View) : RecyclerView.ViewHolder(itemView){
 
+        // Fonction qui permet d'afficher l'item
         fun displayItem(item : String){
             itemView.findViewById<TextView>(R.id.textItem).text = item
         }

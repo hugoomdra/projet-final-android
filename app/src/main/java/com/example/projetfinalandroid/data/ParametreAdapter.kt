@@ -12,6 +12,7 @@ import com.example.projetfinalandroid.R
 class ParametreAdapter(private val parametreList: Array<ParametreActivity.ParametreItem>) : RecyclerView.Adapter<ParametreAdapter.ViewHolder>() {
     class ViewHolder(itemView : View) : RecyclerView.ViewHolder(itemView){
 
+        // Fonction qui permet d'afficher l'item
         fun displayItem(item: ParametreActivity.ParametreItem){
             itemView.findViewById<TextView>(R.id.textItem).text = item.name
             itemView.findViewById<ImageView>(R.id.imageItem).setImageResource(item.icone)

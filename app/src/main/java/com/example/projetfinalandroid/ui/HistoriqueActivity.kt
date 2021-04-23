@@ -22,19 +22,21 @@ class HistoriqueActivity : AppCompatActivity() {
             setDisplayShowHomeEnabled(true)
         }
 
+        // récupération de l'historique actuel
         val items : Array<String> = LocalPreferences.getInstance(this).getHistory()!!.toTypedArray()
 
         // Liste pour tester le RecyclerView
         // val res : Array<String> = arrayOf("super", "test", "oslo", "rayhko", "voxytech","unzinziin")
 
+        // Init de l'adapter pour le recycler view
         recyclerView.adapter = HistoriqueAdapter(items);
 
+
+        // Bouton pour vider la liste historique
         btn_delete_historique.setOnClickListener{
             LocalPreferences.getInstance(this).deleteAllHistory();
             finish()
         }
-
-        Log.d("test", LocalPreferences.getInstance(this).getHistory().toString())
     }
 
 

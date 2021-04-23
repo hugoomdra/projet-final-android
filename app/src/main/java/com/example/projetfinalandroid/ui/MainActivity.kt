@@ -13,15 +13,18 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        // Bouton localisation
         btn_localisation.setOnClickListener { ;
             startActivity(LocalisationActivity.getStartIntent(this))
 //            finish()
         }
 
+        // Bouton parametre
         btn_parametre.setOnClickListener{
             startActivity(ParametreActivity.getStartIntent(this))
         }
 
+        // Bouton easter egg
         btn_easter_egg.setOnClickListener{
             startActivity(EasterEggActivity.getStartIntent(this))
 
@@ -30,6 +33,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onResume() {
         super.onResume()
+        // Desactivation du bouton historique si jamais la liste est vide.
         if (LocalPreferences.getInstance(this).nullHistory()){
             logo_history.setImageResource(R.drawable.ic_baseline_history_24);
             btn_historique.setEnabled(false)

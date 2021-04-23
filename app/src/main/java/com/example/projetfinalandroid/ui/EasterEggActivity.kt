@@ -9,6 +9,7 @@ import kotlinx.android.synthetic.main.activity_easter_egg.*
 
 class EasterEggActivity : AppCompatActivity() {
 
+    // la bonne réponse au jeu
     val bonneReponse = 20
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -24,6 +25,7 @@ class EasterEggActivity : AppCompatActivity() {
         btn_soumettre.setOnClickListener {
             val nombre = edit_text.text.toString().toInt()
 
+            // Logique de l'application pour afficher les bons textes
             if (nombre == bonneReponse) {
                 text_reponse.setTextColor(getColor(R.color.eseo_blue))
                 text_reponse.setText(getString(R.string.easter_egg_bonne_reponse))

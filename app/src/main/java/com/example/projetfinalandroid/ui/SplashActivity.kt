@@ -12,7 +12,8 @@ class SplashActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash)
 
-        window.decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_FULLSCREEN; //cette ligne permet de mettre l'application en full screen
+        //cette ligne permet de mettre l'application en full screen
+        window.decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_FULLSCREEN;
 
         Handler(Looper.getMainLooper()).postDelayed({
             startActivity(MainActivity.getStartIntent(this))

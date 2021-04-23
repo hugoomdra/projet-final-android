@@ -24,6 +24,7 @@ class ParametreActivity : AppCompatActivity() {
             setDisplayShowHomeEnabled(true)
         }
 
+        // Liste des paramères à passer à l'adapter
         val settings = arrayOf(
             ParametreItem(getString(R.string.parametre_list_1),
                 {
